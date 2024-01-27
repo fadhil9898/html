@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan - Form</title>
+    <style>
+        * {
+    margin: 5px;
+    margin-bottom: 0px;
+    padding: 0px;
+    outline: 0px;
+    }
+
+.container {
+    position: absolute;
+    margin: 20px auto;
+    display: block;
+    border: 1px solid black;
+    border-radius: 10px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 25px 25px;
+    width: 300px;
+    }
+.container form input {
+    border: 1px solid black;
+    border-radius: 4px;  
+    padding-right: 50px;
+    }
+
+.button {
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 10px;
+    background-color: rgb(19, 155, 1);
+    }
+
+.jurusan {
+    padding: 3px;
+    padding-right: 50px;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form>
+        <label for="nama">Nama :</label><br>
+        <input type="text" id="nama"><br>
+        
+        <label for="email">Email :</label><br>
+        <input type="email" id="email"><br>
+
+        <label for="password">Password :</label><br>
+        <input type="password" id="password"><br>
+
+        <label for="usia">Usia :</label><br>
+        <input type="number" name="umur" id="umur" min="18" max="100"><br>
+        
+        <label for="tl">Tanggal Lahir :</label><br>
+        <input type="date" name="tanggal" id="tanggal"><br>
+
+        <label for="hobi">Hobi :</label><br>
+        <input type="radio">Membaca buku
+        <input type="radio">Menonton
+        <input type="radio">Berbelanja
+        <input type="radio">Travelling
+        <input type="radio">Olah Raga<br>
+        
+        <label for="sodara">Sodara Kandung :</label><br>
+        <input type="radio">1
+        <input type="radio">2
+        <input type="radio">3
+        <input type="radio">4
+        <input type="radio">5<br>
+        <label for="kelas">Kelas</label><br>
+        <select class="jurusan" name="jurusan" id="jurusan">
+            <option value="pilih_kelas">~~ Pilih Kelas ~~~</option>
+            <option value="xi-rpl-1">XI RPL 1</option>
+            <option value="xi-rpl-2">XI RPL 2</option>
+            <option value="xi-rpl-3">XI RPL 3</option>
+            <option value="xi-tbsm-1">XI TBSM 1</option>
+            <option value="xi-tbsm-2">XI TBSM 2</option>
+            <option value="xi-tbsm-3">XI TBSM 3</option>
+            <option value="xi-tav-1">XI TAV 1</option>
+            <option value="xi-tav-2">XI TAV 2</option>
+            <option value="xi-tav-3">XI TAV 3</option>
+            <option value="xi-dpib-1">XI DPIB 1</option>
+            <option value="xi-dpib-2">XI DPIB 2</option>
+            <option value="xi-dpib-3">XI DPIB 3</option>
+        </select><br>
+        <label for="pesan">Kesan dan Pesan :</label><br>
+        <textarea name="pesan" id="pesan" cols="30" rows="10"></textarea>
+        <button class="button">Kirim</button>
+    </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum 25 - Input</title>
+</head>
+<body>
+    <label for="text">Nama :</label><br>
+    <input type="text" name="nama" placeholder="Masukan nama Anda"><br>
+
+    
+    <label for="password">Kata sandi :</label><br>
+    <input type="password" name="kata_sandi" placeholder="Masukan kata sandi"><br>
+
+
+    <label for="email">Alamat email :</label><br>
+    <input type="email" id="email" name="email" placeholder="Masukan alamat email Anda" required><br>
+
+
+    <label for="umur">Umur :</label><br>
+    <input type="number" name="umur" min="18" max="100" ><br>
+
+
+    <label for="hobi">Hobi :</label><br>
+    <input type="checkbox" name="hobi" value="membaca">Membaca <br>
+    <input type="checkbox" name="hobi" value="menulis">Menulis <br>
+    <input type="checkbox" name="hobi" value="main_game">Main Game <br>
+    <input type="checkbox" name="hobi" value="ngoding">Ngoding <br>
+
+
+    <label for="kelamin">Jenis Kelamin :</label><br>
+    <input type="radio" name="jenis_kelamin" value="pria">Pria <br>
+    <input type="radio" name="jenis_kelamin" value="wanita">Wanita <br>
+
+
+    <label for="foto">Masukan foto anda :</label><br>
+    <input type="file" name="berkas"><br>
+
+
+    <label for="waktu">Pilih Waktu :</label><br>
+    <input type="time" id="waktu" name="waktu" min="08:00" max="17:00" required><br>
+
+
+    <label for="warna">Pilih Warna favorit mu :</label><br>
+    <input type="color" id="warna" name="warna" value=#ff0000><br>
+
+
+    <label for="volume">Atur volume :</label><br>
+    <input type="range" id="volume" name="volume" min="0" max="100" step="1" value="50"><br>
+
+
+    <button type="submit">Kirim</button>
+    <input type="reset" value="Reset">
+
+</body>
+</html>
